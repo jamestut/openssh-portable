@@ -2235,7 +2235,7 @@ read_config_file_depth(const char *filename, struct passwd *pw,
 	if ((f = fopen(filename, "r")) == NULL)
 		return 0;
 
-	if (flags & SSHCONF_CHECKPERM) {
+	if (0) {
 		struct stat sb;
 
 		if (fstat(fileno(f), &sb) == -1)
